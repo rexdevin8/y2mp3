@@ -21,6 +21,3 @@ async def ytsearch(link: str):
     actpath = paths[0]
     print("path is"+str(paths[0]))
     return FileResponse(actpath, media_type="audio/mpeg",filename=download)
-
-if __name__== "__main__":
-    uvicorn.run(app,host="127.0.0.1", port=7000)
